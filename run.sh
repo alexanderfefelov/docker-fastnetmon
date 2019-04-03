@@ -6,4 +6,5 @@ docker run \
   --privileged \
   --net host \
   --volume /etc/localtime:/etc/localtime:ro \
+  --volume fastnetmon:/fastnetmon \
   alexanderfefelov/fastnetmon_af_packet

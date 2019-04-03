@@ -33,4 +33,4 @@ COPY container/ /
 
 VOLUME /fastnetmon
 
-CMD ["/fastnetmon/fastnetmon.sh"]
+CMD ["/fastnetmon/bin/fastnetmon.sh"]
