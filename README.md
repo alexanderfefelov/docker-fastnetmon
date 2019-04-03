@@ -6,7 +6,7 @@ docker-fastnetmon -- это система обнаружения DDoS-атак 
 
 ## Как это запустить?
 
-Для запуска контейнера выполните команду:
+Для запуска контейнера выполните команду
 
 ```bash
 docker run \
@@ -21,11 +21,17 @@ docker run \
 
 ## Как остановить/запустить/перезапустить контейнер?
 
-Для управления контейнером используйте команды:
+Для управления контейнером используйте команды
 
     docker stop fastnetmon
     docker start fastnetmon
     docker restart fastnetmon
+
+## Как запустить клиента FastNetMon?
+
+Для запуска клиента воспользуйтесь командой
+
+    docker exec --tty --interactive fastnetmon /opt/fastnetmon/fastnetmon_client
 
 ## Где мои данные?
 
@@ -36,14 +42,14 @@ docker run \
 
 ## Как это удалить?
 
-Удалите контейнер:
+Удалите контейнер
 
     docker rm --force fastnetmon
 
-Удалите образ:
+Удалите образ
 
     docker image rm alexanderfefelov/fastnetmon
 
-:fire: Удалите данные:
+:fire: Удалите данные
 
     docker volume rm fastnetmon
