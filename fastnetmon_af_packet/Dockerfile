@@ -33,4 +33,4 @@ COPY container/ /
 
 VOLUME /fastnetmon
 
-CMD ["/opt/fastnetmon/fastnetmon", "--configuration_file", "/fastnetmon/fastnetmon.conf", "--log_file", "/fastnetmon/fastnetmon.log"]
+CMD ["/fastnetmon/fastnetmon.sh"]
