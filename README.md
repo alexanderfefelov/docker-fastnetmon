@@ -16,6 +16,7 @@ docker run \
   --net host \
   --volume /etc/localtime:/etc/localtime:ro \
   --volume fastnetmon:/fastnetmon \
+  --volume fastnetmon-attacks:/var/log/fastnetmon_attacks \
   alexanderfefelov/fastnetmon
 ```
 
@@ -36,9 +37,10 @@ docker run \
 ## Где мои данные?
 
 Конфигурационные файлы, скрипты и журнал FastNetMon хранятся в Docker-томе,
-путь к которому можно узнать с помощью команды
+путь к которому можно узнать с помощью команд
 
     docker volume inspect --format '{{.Mountpoint}}' fastnetmon
+    docker volume inspect --format '{{.Mountpoint}}' fastnetmon-attacks
 
 ## Как это удалить?
 
@@ -53,3 +55,4 @@ docker run \
 :fire: Удалите данные
 
     docker volume rm fastnetmon
+    docker volume rm fastnetmon-attacks

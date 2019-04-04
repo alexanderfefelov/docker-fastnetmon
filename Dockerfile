@@ -32,5 +32,6 @@ COPY --from=build /opt /opt
 COPY container/ /
 
 VOLUME /fastnetmon
+VOLUME /var/log/fastnetmon_attacks
 
 CMD ["/fastnetmon/bin/fastnetmon.sh"]
