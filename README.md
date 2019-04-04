@@ -36,8 +36,8 @@ docker run \
 
 ## Где мои данные?
 
-Конфигурационные файлы, скрипты и журнал FastNetMon хранятся в Docker-томе,
-путь к которому можно узнать с помощью команд
+Конфигурационные файлы, скрипты, журналы и pcap-дампы хранятся в Docker-томах,
+пути к которым можно узнать с помощью команд
 
     docker volume inspect --format '{{.Mountpoint}}' fastnetmon
     docker volume inspect --format '{{.Mountpoint}}' fastnetmon-attacks
