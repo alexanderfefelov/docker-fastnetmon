@@ -18,7 +18,7 @@ FROM ubuntu:18.04
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN  apt-get -qq update \
-  && apt-get -qq install --yes --no-install-recommends ca-certificates sshpass \
+  && apt-get -qq install --yes --no-install-recommends ca-certificates openssh-client sshpass \
        libboost-thread1.65.1 \
        libboost-program-options1.65.1 \
        libboost-regex1.65.1 \
