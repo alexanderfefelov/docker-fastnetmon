@@ -6,6 +6,8 @@
 #     $3 pps
 #     $4 action
 
+details=$(< /dev/stdin)
+
 echo $0 $@
 
 . /fastnetmon/bin/functions.sh
