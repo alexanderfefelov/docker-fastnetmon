@@ -20,4 +20,9 @@ case "$4" in
     attack_details)
         handle_attack_details $1
         ;;
+    *)
+        handle_unknown_action $1
+        ;;
 esac
+
+exit $ret_code
