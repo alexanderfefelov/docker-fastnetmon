@@ -2,7 +2,7 @@
 
 ## Что это?
 
-docker-fastnetmon -- это система обнаружения DDoS-атак [FastNetMon](https://github.com/pavel-odintsov/fastnetmon) в Docker-контейнере.
+docker-fastnetmon -- это система обнаружения DDoS-атак [FastNetMon Community Edition](https://github.com/pavel-odintsov/fastnetmon) в Docker-контейнере.
 
 ## Как это запустить?
 
