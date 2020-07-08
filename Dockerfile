@@ -33,7 +33,4 @@ RUN  apt-get -qq update \
   && apt-get -qq clean \
   && rm --recursive --force /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-VOLUME /fastnetmon
-VOLUME /var/log/fastnetmon_attacks
-
 CMD ["/fastnetmon/bin/fastnetmon.sh"]
